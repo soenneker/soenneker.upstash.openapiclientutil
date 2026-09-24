@@ -43,8 +43,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Upstash.HttpClients" Version="4.0.0" Condition="'$(UseLocalUpstashProjects)' != 'true'" />
-        <PackageReference Include="Soenneker.Upstash.OpenApiClient" Version="4.0.0" Condition="'$(UseLocalUpstashProjects)' != 'true'" />
+        <PackageReference Include="Soenneker.Upstash.HttpClients" Version="4.0.1" Condition="'$(UseLocalUpstashProjects)' != 'true'" />
+        <PackageReference Include="Soenneker.Upstash.OpenApiClient" Version="4.0.1" Condition="'$(UseLocalUpstashProjects)' != 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(UseLocalUpstashProjects)' == 'true'">
         <ProjectReference Include="../../../soenneker.upstash.httpclients/src/Soenneker.Upstash.HttpClients/Soenneker.Upstash.HttpClients.csproj" />
