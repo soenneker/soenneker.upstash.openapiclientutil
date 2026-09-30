@@ -9,7 +9,7 @@ namespace Soenneker.Upstash.OpenApiClientUtil.Tests;
 public sealed class UpstashOpenApiClientUtilTests(Host host) : HostedUnitTest(host)
 {
     [Test]
-    public async Task Generated_requests_use_the_configured_base_url()
+    public async ValueTask Generated_requests_use_the_configured_base_url()
     {
         var client = await Resolve<IUpstashOpenApiClientUtil>(true).Get();
         var request = client.Redis.Databases.ToGetRequestInformation();
@@ -17,7 +17,7 @@ public sealed class UpstashOpenApiClientUtilTests(Host host) : HostedUnitTest(ho
     }
 
     [Test]
-    public async Task Get_reuses_the_generated_client()
+    public async ValueTask Get_reuses_the_generated_client()
     {
         var util = Resolve<IUpstashOpenApiClientUtil>(true);
         var first = await util.Get();
