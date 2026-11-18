@@ -46,7 +46,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Upstash.HttpClients" Version="11.0.45" />
+        <PackageReference Include="Soenneker.Upstash.HttpClients" Version="11.0.47" />
         <PackageReference Include="Soenneker.Upstash.OpenApiClient" Version="11.0.26" />
     </ItemGroup>
 </Project>
